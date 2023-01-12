@@ -23,11 +23,11 @@ class MyButton extends StatelessWidget {
         height: 55,
         width: 200,
         decoration: BoxDecoration(
-          color: const Color.fromARGB(255, 68, 154, 115),
+          color: const Color.fromARGB(255, 255, 255, 255),
           borderRadius: BorderRadius.circular(10.0),
           boxShadow: const [
             BoxShadow(
-              color: Color.fromARGB(31, 255, 255, 255),
+              color: Color.fromARGB(195, 249, 249, 249),
               offset: Offset(0, 2),
               blurRadius: 6.0,
             ),
