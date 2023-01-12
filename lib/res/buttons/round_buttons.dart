@@ -21,24 +21,30 @@ class MyButton extends StatelessWidget {
       onTap: onPress,
       child: Container(
         height: 55,
-        width: 200,
+        width: 320,
         decoration: BoxDecoration(
           color: const Color.fromARGB(255, 255, 255, 255),
-          borderRadius: BorderRadius.circular(10.0),
+          borderRadius: BorderRadius.circular(40.0),
           boxShadow: const [
             BoxShadow(
-              color: Color.fromARGB(195, 249, 249, 249),
+              color: Color.fromARGB(9, 249, 249, 249),
               offset: Offset(0, 2),
               blurRadius: 6.0,
             ),
           ],
         ),
         child: Center(
-            child: Text(
-          title,
-          style: TextStyle(
-              color: const Color.fromARGB(255, 0, 0, 0), fontSize: fontsize),
-        )),
+            child: loading
+                ? const CircularProgressIndicator(
+                    color: Color.fromARGB(255, 0, 0, 0),
+                  )
+                : Text(
+                    title,
+                    style: TextStyle(
+                      color: const Color.fromARGB(255, 0, 0, 0),
+                      fontSize: fontsize,
+                    ),
+                  )),
       ),
     );
   }
