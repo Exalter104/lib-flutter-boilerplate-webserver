@@ -19,6 +19,16 @@ class _PasswordChangeState extends State<PasswordChange> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              Image.asset(
+                "images/logo-red-1000.png",
+                width: 150,
+                height: 130,
+
+                // fit: BoxFit.contain,
+              ),
+              const SizedBox(
+                height: 10,
+              ),
               Text(
                 "Password Change",
                 style: GoogleFonts.bebasNeue(

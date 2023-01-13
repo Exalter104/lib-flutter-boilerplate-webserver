@@ -33,6 +33,16 @@ class _LoginScreenState extends State<LoginScreen> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+                  Image.asset(
+                    "images/logo-red-1000.png",
+                    width: 150,
+                    height: 130,
+
+                    // fit: BoxFit.contain,
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
                   Text(
                     "Welcome Back Exalter!",
                     style: GoogleFonts.bebasNeue(

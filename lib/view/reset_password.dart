@@ -18,6 +18,16 @@ class _ResetPasswordState extends State<ResetPassword> {
       body: SafeArea(
           child: Center(
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+          Image.asset(
+            "images/logo-red-1000.png",
+            width: 150,
+            height: 130,
+
+            // fit: BoxFit.contain,
+          ),
+          const SizedBox(
+            height: 10,
+          ),
           Text(
             "Exalter!",
             style: GoogleFonts.bebasNeue(
@@ -55,9 +65,6 @@ class _ResetPasswordState extends State<ResetPassword> {
                   ),
                 ),
               )),
-          const SizedBox(
-            height: 20,
-          ),
           const SizedBox(
             height: 20,
           ),
